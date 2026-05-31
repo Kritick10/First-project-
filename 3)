@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KrnoixNeeds AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🧠 KrnoixNeeds AI</h1>
+  <p>Find the perfect product instantly with AI intelligence</p>
+
+  <a href="chat.html" class="btn">Start Searching</a>
+</header>
+
+<section class="features">
+  <div class="card">⚡ Instant Product Finder</div>
+  <div class="card">🧠 AI Powered Suggestions</div>
+  <div class="card">💰 Best Deals Only</div>
+</section>
+
+</body>
+</html>
