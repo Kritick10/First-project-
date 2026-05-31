@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/ai-shop-assistant/Frontend/index.html" },
+    { "source": "/(.*)", "destination": "/ai-shop-assistant/Frontend/$1" }
+  ]
+}
