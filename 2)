@@ -1,0 +1,44 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+
+// simple login
+app.post("/login", (req, res) => {
+  const { password } = req.body;
+
+  if (password === ADMIN_PASSWORD) {
+    res.json({ success: true, token: "admin-access" });
+  } else {
+    res.json({ success: false });
+  }
+});
+
+// protect admin actions
+function isAdmin(req, res, next) {
+  if (req.headers.authorization === "admin-access") {
+    next();
+  } else {
+    res.status(403).json({ error: "Not allowed" });
+  }
+}
+
+// example protected route
+app.post("/add-product", isAdmin, (req, res) => {
+  // later we store products here
+  res.json({ message: "Product added (mock)" });
+});
+
+app.listen(3000, () => {
+  console.log("Server running");
+});
+ADMIN_PASSWORD=yourStrongPassword123
+
+
