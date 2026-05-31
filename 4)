@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle, #0f0f1f, #000);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 100px 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  color: #aaa;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, #00f, #0ff);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+}
