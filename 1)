@@ -1,0 +1,22 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables (VERY important)
+.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS junk
+desktop.ini
+node_modules/
+dist/
+build/
