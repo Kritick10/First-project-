@@ -10,12 +10,9 @@ ai-shop-assistant/
 ├── backend/
 │   ├── server.js
 │   ├── auth.js          (admin login protection)
-│   ├── products.json    (your product database)
+│   └── products.json    (your product database)
 │
-└── .env
-ai-shop-assistant/
-└── package.json
-npm init -y
-node_modules/
-.env
-README.md
+├── package.json
+├── .env
+├── .gitignore
+└── README.md
