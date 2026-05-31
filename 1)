@@ -1,7 +1,7 @@
 ai-shop-assistant/
 │
 ├── frontend/
-│   ├── landing.html     (viral homepage)
+│   ├── index.html     (viral homepage)
 │   ├── chat.html        (AI assistant UI)
 │   ├── admin.html       (your control panel)
 │   ├── style.css
